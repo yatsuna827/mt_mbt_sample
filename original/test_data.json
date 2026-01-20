@@ -1,0 +1,333 @@
+{
+  "basic_sequence_tests": [
+    {
+      "seed": 5489,
+      "outputs": [
+        {
+          "call_number": 1,
+          "value": 3499211612
+        },
+        {
+          "call_number": 2,
+          "value": 581869302
+        },
+        {
+          "call_number": 3,
+          "value": 3890346734
+        },
+        {
+          "call_number": 10,
+          "value": 1323567403
+        },
+        {
+          "call_number": 100,
+          "value": 3468319344
+        },
+        {
+          "call_number": 623,
+          "value": 2227348307
+        },
+        {
+          "call_number": 624,
+          "value": 4020325887
+        },
+        {
+          "call_number": 625,
+          "value": 4178893912
+        },
+        {
+          "call_number": 626,
+          "value": 610818241
+        },
+        {
+          "call_number": 1000,
+          "value": 1341017984
+        }
+      ]
+    },
+    {
+      "seed": 0,
+      "outputs": [
+        {
+          "call_number": 1,
+          "value": 2357136044
+        },
+        {
+          "call_number": 2,
+          "value": 2546248239
+        },
+        {
+          "call_number": 3,
+          "value": 3071714933
+        },
+        {
+          "call_number": 10,
+          "value": 2678185683
+        },
+        {
+          "call_number": 100,
+          "value": 1396067212
+        },
+        {
+          "call_number": 623,
+          "value": 631131020
+        },
+        {
+          "call_number": 624,
+          "value": 3791854820
+        },
+        {
+          "call_number": 625,
+          "value": 341544762
+        },
+        {
+          "call_number": 626,
+          "value": 1076416385
+        },
+        {
+          "call_number": 1000,
+          "value": 3043451800
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "outputs": [
+        {
+          "call_number": 1,
+          "value": 1791095845
+        },
+        {
+          "call_number": 2,
+          "value": 4282876139
+        },
+        {
+          "call_number": 3,
+          "value": 3093770124
+        },
+        {
+          "call_number": 10,
+          "value": 1013994432
+        },
+        {
+          "call_number": 100,
+          "value": 2253996187
+        },
+        {
+          "call_number": 623,
+          "value": 3906854836
+        },
+        {
+          "call_number": 624,
+          "value": 2006116153
+        },
+        {
+          "call_number": 625,
+          "value": 1104314680
+        },
+        {
+          "call_number": 626,
+          "value": 939235918
+        },
+        {
+          "call_number": 1000,
+          "value": 548926898
+        }
+      ]
+    },
+    {
+      "seed": 12345,
+      "outputs": [
+        {
+          "call_number": 1,
+          "value": 3992670690
+        },
+        {
+          "call_number": 2,
+          "value": 3823185381
+        },
+        {
+          "call_number": 3,
+          "value": 1358822685
+        },
+        {
+          "call_number": 10,
+          "value": 2285257250
+        },
+        {
+          "call_number": 100,
+          "value": 3922418062
+        },
+        {
+          "call_number": 623,
+          "value": 2929929201
+        },
+        {
+          "call_number": 624,
+          "value": 2940097750
+        },
+        {
+          "call_number": 625,
+          "value": 3957348375
+        },
+        {
+          "call_number": 626,
+          "value": 3514278914
+        },
+        {
+          "call_number": 1000,
+          "value": 47030557
+        }
+      ]
+    },
+    {
+      "seed": 4294967295,
+      "outputs": [
+        {
+          "call_number": 1,
+          "value": 419326371
+        },
+        {
+          "call_number": 2,
+          "value": 479346978
+        },
+        {
+          "call_number": 3,
+          "value": 3918654476
+        },
+        {
+          "call_number": 10,
+          "value": 1217888032
+        },
+        {
+          "call_number": 100,
+          "value": 2073283336
+        },
+        {
+          "call_number": 623,
+          "value": 1222270187
+        },
+        {
+          "call_number": 624,
+          "value": 1027084080
+        },
+        {
+          "call_number": 625,
+          "value": 3860652269
+        },
+        {
+          "call_number": 626,
+          "value": 657474326
+        },
+        {
+          "call_number": 1000,
+          "value": 2673539693
+        }
+      ]
+    }
+  ],
+  "index_progression_tests": [
+    {
+      "seed": 5489,
+      "index_progression": [
+        {
+          "after_calls": 0,
+          "index": 0
+        },
+        {
+          "after_calls": 1,
+          "index": 1
+        },
+        {
+          "after_calls": 10,
+          "index": 10
+        },
+        {
+          "after_calls": 625,
+          "index": 625
+        },
+        {
+          "after_calls": 1000,
+          "index": 1000
+        }
+      ]
+    }
+  ],
+  "long_term_tests": [
+    {
+      "seed": 12345,
+      "long_term_outputs": [
+        {
+          "call_number": 10000,
+          "value": 1379954266,
+          "index": 10000
+        },
+        {
+          "call_number": 50000,
+          "value": 115405301,
+          "index": 50000
+        },
+        {
+          "call_number": 100000,
+          "value": 1099245044,
+          "index": 100000
+        }
+      ]
+    }
+  ],
+  "advance_tests": [
+    {
+      "seed": 5489,
+      "advance_tests": [
+        {
+          "advance_count": 0,
+          "next_value": 3499211612,
+          "index_after_advance": 0,
+          "index_after_getrand": 1
+        },
+        {
+          "advance_count": 1,
+          "next_value": 581869302,
+          "index_after_advance": 1,
+          "index_after_getrand": 2
+        },
+        {
+          "advance_count": 10,
+          "next_value": 418932835,
+          "index_after_advance": 10,
+          "index_after_getrand": 11
+        },
+        {
+          "advance_count": 100,
+          "next_value": 1185518681,
+          "index_after_advance": 100,
+          "index_after_getrand": 101
+        },
+        {
+          "advance_count": 623,
+          "next_value": 4020325887,
+          "index_after_advance": 623,
+          "index_after_getrand": 624
+        },
+        {
+          "advance_count": 624,
+          "next_value": 4178893912,
+          "index_after_advance": 624,
+          "index_after_getrand": 625
+        },
+        {
+          "advance_count": 625,
+          "next_value": 610818241,
+          "index_after_advance": 625,
+          "index_after_getrand": 626
+        },
+        {
+          "advance_count": 1000,
+          "next_value": 2500741117,
+          "index_after_advance": 1000,
+          "index_after_getrand": 1001
+        }
+      ]
+    }
+  ]
+}
