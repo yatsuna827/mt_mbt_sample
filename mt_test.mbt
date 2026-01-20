@@ -4,7 +4,7 @@
 
 ///|
 test "basic_sequence_seed_5489" {
-  let mt = MT::new(5489U)
+  let mt = MT::make(5489U)
 
   // 1回目
   assert_eq(mt.get_rand(), 3499211612U)
@@ -52,7 +52,7 @@ test "basic_sequence_seed_5489" {
 
 ///|
 test "basic_sequence_seed_0" {
-  let mt = MT::new(0U)
+  let mt = MT::make(0U)
   assert_eq(mt.get_rand(), 2357136044U)
   assert_eq(mt.get_rand(), 2546248239U)
   assert_eq(mt.get_rand(), 3071714933U)
@@ -81,7 +81,7 @@ test "basic_sequence_seed_0" {
 
 ///|
 test "basic_sequence_seed_1" {
-  let mt = MT::new(1U)
+  let mt = MT::make(1U)
   assert_eq(mt.get_rand(), 1791095845U)
   assert_eq(mt.get_rand(), 4282876139U)
   assert_eq(mt.get_rand(), 3093770124U)
@@ -110,7 +110,7 @@ test "basic_sequence_seed_1" {
 
 ///|
 test "basic_sequence_seed_12345" {
-  let mt = MT::new(12345U)
+  let mt = MT::make(12345U)
   assert_eq(mt.get_rand(), 3992670690U)
   assert_eq(mt.get_rand(), 3823185381U)
   assert_eq(mt.get_rand(), 1358822685U)
@@ -139,7 +139,7 @@ test "basic_sequence_seed_12345" {
 
 ///|
 test "basic_sequence_seed_max" {
-  let mt = MT::new(4294967295U)
+  let mt = MT::make(4294967295U)
   assert_eq(mt.get_rand(), 419326371U)
   assert_eq(mt.get_rand(), 479346978U)
   assert_eq(mt.get_rand(), 3918654476U)
@@ -168,7 +168,7 @@ test "basic_sequence_seed_max" {
 
 ///|
 test "index_progression" {
-  let mt = MT::new(5489U)
+  let mt = MT::make(5489U)
 
   // 初期状態
   assert_eq(mt.index(), 0UL)
@@ -200,7 +200,7 @@ test "index_progression" {
 
 ///|
 test "long_term_generation" {
-  let mt = MT::new(12345U)
+  let mt = MT::make(12345U)
 
   // 10000回目まで生成
   for i = 0; i < 9999; i = i + 1 {
@@ -228,7 +228,7 @@ test "long_term_generation" {
 
 ///|
 test "advance_0" {
-  let mt = MT::new(5489U)
+  let mt = MT::make(5489U)
   mt.advance(0U)
   assert_eq(mt.index(), 0UL)
   assert_eq(mt.get_rand(), 3499211612U)
@@ -239,7 +239,7 @@ test "advance_0" {
 
 ///|
 test "advance_1" {
-  let mt = MT::new(5489U)
+  let mt = MT::make(5489U)
   mt.advance(1U)
   assert_eq(mt.index(), 1UL)
   assert_eq(mt.get_rand(), 581869302U)
@@ -250,7 +250,7 @@ test "advance_1" {
 
 ///|
 test "advance_10" {
-  let mt = MT::new(5489U)
+  let mt = MT::make(5489U)
   mt.advance(10U)
   assert_eq(mt.index(), 10UL)
   assert_eq(mt.get_rand(), 418932835U)
@@ -261,7 +261,7 @@ test "advance_10" {
 
 ///|
 test "advance_100" {
-  let mt = MT::new(5489U)
+  let mt = MT::make(5489U)
   mt.advance(100U)
   assert_eq(mt.index(), 100UL)
   assert_eq(mt.get_rand(), 1185518681U)
@@ -272,7 +272,7 @@ test "advance_100" {
 
 ///|
 test "advance_623" {
-  let mt = MT::new(5489U)
+  let mt = MT::make(5489U)
   mt.advance(623U)
   assert_eq(mt.index(), 623UL)
   assert_eq(mt.get_rand(), 4020325887U)
@@ -283,7 +283,7 @@ test "advance_623" {
 
 ///|
 test "advance_624" {
-  let mt = MT::new(5489U)
+  let mt = MT::make(5489U)
   mt.advance(624U)
   assert_eq(mt.index(), 624UL)
   assert_eq(mt.get_rand(), 4178893912U)
@@ -294,7 +294,7 @@ test "advance_624" {
 
 ///|
 test "advance_625" {
-  let mt = MT::new(5489U)
+  let mt = MT::make(5489U)
   mt.advance(625U)
   assert_eq(mt.index(), 625UL)
   assert_eq(mt.get_rand(), 610818241U)
@@ -305,7 +305,7 @@ test "advance_625" {
 
 ///|
 test "advance_1000" {
-  let mt = MT::new(5489U)
+  let mt = MT::make(5489U)
   mt.advance(1000U)
   assert_eq(mt.index(), 1000UL)
   assert_eq(mt.get_rand(), 2500741117U)

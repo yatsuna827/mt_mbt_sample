@@ -1,3 +1,13 @@
 {
-  "is-main": true
+  "is-main": false,
+  "link": {
+    "js": {
+      "exports": [
+        "make",
+        "get_rand",
+        "advance",
+        "index"
+      ]
+    }
+  }
 }

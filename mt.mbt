@@ -91,7 +91,7 @@ fn MT::update(self : MT) -> Unit {
 // コンストラクタ - シード値からMTインスタンスを作成
 
 ///|
-pub fn MT::new(seed : UInt) -> MT {
+pub fn MT::make(seed : UInt) -> MT {
   { state_vector: init_state_vector(seed), index: 0UL, rand_index: N } // 初回でupdate()を呼ぶため
 }
 

@@ -3,7 +3,7 @@ fn main {
   // メルセンヌツイスタのサンプル
 
   // シード値5489で初期化
-  let mt = MT::new(5489U)
+  let mt = @mt_mbt_sample.MT::make(5489U)
   println("=== メルセンヌツイスタ MT19937 デモ ===\n")
 
   // 最初の10個の乱数を生成
@@ -30,7 +30,7 @@ fn main {
 
   // 別のシードで新しいインスタンスを作成
   println("\n=== シード12345で新しいインスタンス ===")
-  let mt2 = MT::new(12345U)
+  let mt2 = @mt_mbt_sample.MT::make(12345U)
   println("最初の5個の乱数:")
   for i = 0; i < 5; i = i + 1 {
     let rand = mt2.get_rand()
@@ -39,7 +39,7 @@ fn main {
 
   // 大きな範囲での動作確認
   println("\n=== 大量生成テスト ===")
-  let mt3 = MT::new(42U)
+  let mt3 = @mt_mbt_sample.MT::make(42U)
   for i = 0; i < 10000; i = i + 1 {
     mt3.get_rand() |> ignore
   }
